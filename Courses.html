@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECourses - Online Learning Platform</title>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/Courses.css">
+    <link rel="stylesheet" href="css/Footer.css">
+      <!-- icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- aos animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <style>
+        .list ul li #courses {
+           position: relative;
+       }
+       
+       .list ul li #courses::after {
+           content: '';
+           position: absolute;
+           left: 0;
+           bottom: -5px;
+           width: 0;
+           height: 2px;
+           background-color: rgb(0, 140, 255);
+           transition: 0.3s;
+       }
+       
+       .list ul li #courses:link::after {
+           width: 100%;
+       }
+       .list ul li #courses:link{
+           color: rgb(0, 140, 255);
+       
+       }
+       
+           </style>
+</head>
+<body>
+      <!-- navbar -->
+      <nav data-aos="fade-zoom-in" data-aos-duration="1000"  class="nav">
+        <div class="logo"><a href="Index.html"><img src="Images/logo.JPG" alt=""></a></div>
+        <input type="checkbox" id="toggle" hidden>
+        <label for="toggle" class="menu-toggle">&#9776;</label>
+        <div class="list">
+            <ul>
+                <li><a  href="Index.html">home</a></li>
+                <li><a href="About.html">about</a></li>
+                <li><a id="courses" href="Courses.html">courses</a></li>
+                <li><a href="Contact.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <button type="button" class="btn"><a href="Courses.html">join now</a></button>
+        </div>
+    </nav>
+
+    <!-- page header -->
+    <div class="page-header">
+        <p data-aos="fade-down" data-aos-duration="2000">courses</p>
+    </div>
+
+    <!-- courses -->
+    <div class="container">
+        <div class="header">            
+            <p data-aos="fade-up" data-aos-duration="1000">Master new skills with our comprehensive online courses</p>
+        </div>
+
+        <div class="courses-grid">
+            <!-- Course 1 -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_1.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Complete Web Development Bootcamp</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.8</div>
+                        <div class="stat">👥 25,431 students</div>
+                        <div class="stat">⏱️ 52 hours</div>
+                    </div>
+                    <p class="course-description">Master HTML, CSS, JavaScript, React, Node.js, and MongoDB. Build real-world projects and become a full-stack developer from scratch.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$89.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_4.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Machine Learning & AI Fundamentals</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.9</div>
+                        <div class="stat">👥 18,756 students</div>
+                        <div class="stat">⏱️ 45 hours</div>
+                    </div>
+                    <p class="course-description">Learn Python, TensorFlow, and scikit-learn. Build intelligent systems and understand neural networks, deep learning, and computer vision.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$129.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div data-aos="fade-up" data-aos-duration="1000" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_2.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">iOS App Development with Swift</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.7</div>
+                        <div class="stat">👥 12,983 students</div>
+                        <div class="stat">⏱️ 38 hours</div>
+                    </div>
+                    <p class="course-description">Create stunning iOS apps using Swift and Xcode. Learn UI/UX design, Core Data, networking, and publish apps to the App Store.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$99.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div data-aos="fade-up" data-aos-duration="1500" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_3.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Digital Marketing Mastery</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.6</div>
+                        <div class="stat">👥 31,247 students</div>
+                        <div class="stat">⏱️ 42 hours</div>
+                    </div>
+                    <p class="course-description">Master SEO, social media marketing, Google Ads, email marketing, and analytics. Build comprehensive digital marketing strategies.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$79.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 5 -->
+            <div data-aos="fade-up" data-aos-duration="1500" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_6.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">AWS Cloud Computing Complete Guide</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.8</div>
+                        <div class="stat">👥 22,156 students</div>
+                        <div class="stat">⏱️ 48 hours</div>
+                    </div>
+                    <p class="course-description">Learn AWS services, cloud architecture, DevOps, and deployment strategies. Prepare for AWS certification exams.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$119.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 6 -->
+            <div data-aos="fade-up" data-aos-duration="1500" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_5.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Data Science with Python</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.9</div>
+                        <div class="stat">👥 19,834 students</div>
+                        <div class="stat">⏱️ 55 hours</div>
+                    </div>
+                    <p class="course-description">Master data analysis, visualization, and statistical modeling using Pandas, NumPy, Matplotlib, and Seaborn.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$109.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 7 -->
+            <div data-aos="fade-up" data-aos-duration="2000" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_9.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Cybersecurity Fundamentals</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.7</div>
+                        <div class="stat">👥 15,672 students</div>
+                        <div class="stat">⏱️ 40 hours</div>
+                    </div>
+                    <p class="course-description">Learn ethical hacking, network security, risk assessment, and incident response. Protect systems from cyber threats.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$94.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 8 -->
+            <div data-aos="fade-up" data-aos-duration="2000" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_8.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Business Analytics & Intelligence</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.5</div>
+                        <div class="stat">👥 13,592 students</div>
+                        <div class="stat">⏱️ 35 hours</div>
+                    </div>
+                    <p class="course-description">Transform data into actionable insights using Excel, Tableau, Power BI, and SQL for strategic decision-making.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$84.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 9 -->
+            <div data-aos="fade-up" data-aos-duration="2000" class="course-card">
+                <div class="course-image">
+                    <div class="course-icon"><img src="Images/course_7.jpg" alt=""></div>
+                </div>
+                <div class="course-content">
+                    <h3 class="course-title">Video Editing & Motion Graphics</h3>
+                    <div class="stats">
+                        <div class="stat">⭐ 4.8</div>
+                        <div class="stat">👥 17,429 students</div>
+                        <div class="stat">⏱️ 44 hours</div>
+                    </div>
+                    <p class="course-description">Master Adobe Premiere Pro, After Effects, and DaVinci Resolve. Create professional videos and stunning animations.</p>
+                    <div class="course-footer">
+                        <div class="course-price">$89.99</div>
+                        <button class="enroll-btn"><a href="Courses.html">Enroll Now</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- footer -->
+     <footer data-aos="fade-zoom-in" data-aos-duration="1000" class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section company-info">
+                    <h3>About Us</h3>
+                    <p>We are a modern company dedicated to providing exceptional services and creating meaningful
+                        connections with our community.</p>
+                    <p>Building the future, one step at a time.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Courses.html">Courses</a></li>                        
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="quick-links">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#support">Customer Support</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" title="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link linkedin" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 Your Company Name. All rights reserved.
+                </div>
+                <nav class="footer-nav">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                    <a href="#sitemap">Sitemap</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+</html>

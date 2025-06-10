@@ -1,0 +1,184 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.page-header{
+    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)),url(../Images/page-header.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #795959; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative; 
+    z-index: 10;
+}
+
+.logo img{
+    width: 210px;
+    /* height: 80px; */
+    font-size: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(12, 123, 213);
+    cursor: pointer;
+}
+
+.list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transition: all 0.3s ease;
+}
+
+.list ul li a{
+    text-decoration: none;
+    margin: 12px;
+    text-transform: capitalize;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+.list ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: rgb(0, 140, 255);
+    transition: 0.3s;
+}
+
+.list ul li a:hover::after {
+    width: 100%;
+}
+
+.list ul li a:hover {
+    color: rgb(0, 140, 255);
+}
+
+.list ul li a:active {
+    /* background-color: rgb(0, 140, 255); */
+    /* padding: 10px;
+    color: #fff;
+    border-radius: 5px; */
+    transition: all 0.2s ease-in-out;
+}
+
+.login{
+    /* padding-inline: 14px;
+    padding-block: 10px; */
+    background-color: #fff;
+}
+.login .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login .btn {
+    padding:10px 15px;    
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    background-color: rgb(12, 123, 213);
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 0;
+}
+
+.login .btn:hover{
+    background-color: rgb(14, 102, 175);
+}
+
+/* Responsive Menu */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+        .list, .login {
+            background-color: #fff;
+            position: absolute;
+            top: 100%;
+            left: 0;        
+            width: 100%;
+            /* margin-bottom: 1rem; */
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    
+    .list ul, .login {
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        padding-inline: 0.5rem;
+    }
+    
+    .list ul li{
+        margin-bottom: 7px; 
+    }
+    
+    .login {        
+        margin-top:23px;
+        padding: 5px 15px;
+        top: 12.2rem;
+       
+    }        
+    input[type="checkbox"]:checked ~ .list {
+        display: flex;
+    }
+
+    input[type="checkbox"]:checked ~ .login {
+        display: flex;
+    }
+}
+
+@media (max-width:480px) {
+    .page-header{
+        width: 100%;
+    }
+}
+
+
+

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/About.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+        .list ul li #about {
+            position: relative;
+        }
+
+        .list ul li #about::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: rgb(0, 140, 255);
+            transition: 0.3s;
+        }
+
+        .list ul li #about:link::after {
+            width: 100%;
+        }
+
+        .list ul li #about:link {
+            color: rgb(0, 140, 255);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav data-aos="fade-zoom-in" data-aos-duration="1000"  class="nav">
+        <div class="logo"><a href="Index.html"><img src="Images/logo.JPG" alt=""></a></div>
+        <input type="checkbox" id="toggle" hidden>
+        <label for="toggle" class="menu-toggle">&#9776;</label>
+        <div class="list">
+            <ul>
+                <li><a href="Index.html">home</a></li>
+                <li><a id="about" href="About.html">about</a></li>
+                <li><a href="Courses.html">courses</a></li>
+                <li><a href="Contact.html">contact us</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <button type="button" class="btn"><a href="Courses.html">join now</a></button>
+        </div>
+    </nav>
+    <!-- about -->
+    <div class="page-header">
+        <p data-aos="fade-down" data-aos-duration="2000" style="color: white;">About Us</p>
+    </div>
+
+
+    <div class="lists">
+        <div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1500">
+            <div class="box">
+                <div class="list list-1">
+                    <div class="icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Online Classes</h3>
+                        <p>Online classes are a flexible and convenient way to learn through the internet.</p>
+                    </div>
+                </div>
+                <div class="list list-2">
+                    <div class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Skill instructor</h3>
+                        <p>A Skills Instructor is a professional who designs and delivers training programs.</p>
+                    </div>
+                </div>
+                <div class="list list-3">
+                    <div class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Book Library</h3>
+                        <p>A Book Library is a collection of books and resources organized for research, and learning.
+                        </p>
+                    </div>
+                </div>
+                <div class="list list-4">
+                    <div class="icon">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Home Projects</h3>
+                        <p>Home Projects are creative, hands-on tasks or improvements you can do at home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out" class="img">
+            <img src="Images/about.jpg" width="450px" height="450px" alt="">
+        </div>
+        <div data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out" class="text">
+            <h3 class="about" style="text-transform: uppercase;font-size: 1.4rem; ">About us</h3>
+            <h1 style="text-transform: capitalize;font-size: 2.5rem;">Innovative way to learn</h1>
+            <p>ECourses is a modern online learning platform designed to make education accessible, flexible, and
+                effective for everyone. Whether you're a student aiming to boost your academic skills, a professional
+                looking to advance your career, or someone passionate about learning something new, eCourses offers a
+                wide variety of expert-led courses across multiple fields.
+
+                Our platform provides high-quality video lessons, interactive content, and downloadable resources to
+                support every type of learner. With 24/7 access, you can learn at your own pace, on any device, from
+                anywhere in the world. Upon course completion, learners receive certificates that can enhance their
+                resumes and portfolios.
+
+                At eCourses, we believe that learning should never stop. That’s why we’re committed to building a global
+                community of learners empowered by knowledge and driven by curiosity.</p>
+            <button type="button"><a href="About.html" style="text-decoration: none;color: white;">Learn More</a></button>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer data-aos="fade-zoom-in" data-aos-duration="1000" class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section company-info">
+                    <h3>About Us</h3>
+                    <p>We are a modern company dedicated to providing exceptional services and creating meaningful
+                        connections with our community.</p>
+                    <p>Building the future, one step at a time.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Courses.html">Courses</a></li>                        
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul class="quick-links">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#support">Customer Support</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook" title="Facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-link twitter" title="Twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link instagram" title="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link linkedin" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    © 2024 Your Company Name. All rights reserved.
+                </div>
+                <nav class="footer-nav">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Policy</a>
+                    <a href="#sitemap">Sitemap</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
