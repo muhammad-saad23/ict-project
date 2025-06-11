@@ -154,11 +154,14 @@
     }
 
     .box .text {
-        height: 140px;
+        /* height: 140px; */
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
     }
 
     .box .text h3 {
-        font-size: 22px;
+        font-size: 21px;
     }
 }
 
@@ -202,12 +205,14 @@
     }
 
     .box .text {
-        height: 180px;
+        /* height: 180px; */
+        display: flex;
+        justify-content: center;
         font-size: 1rem;
     }
 
     .box .text h3 {
-        font-size: 25px;
+        font-size: 22px;
         line-height: 2rem;
     }
     .box .text h4{
@@ -229,10 +234,6 @@
         font-size: 0.9rem;
     }
 
-    .box .text h3 {
-        font-size: 18px;
-    }
-
     .carousel .box .btn {
         margin-block: 10px;
         /* width: 100%; */
@@ -240,8 +241,11 @@
         font-size: 1rem;
     }
 
+    .box .text{
+        height: 180px;
+    }
     .box .text h3{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .box .text h4{

@@ -31,13 +31,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 5px 20px;
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     position: sticky; 
     top: 0;
     z-index: 10;
+    animation: navFade 1s ease-out ;
 }
+@keyframes navFade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 
 .logo img{
     width: 210px;
@@ -98,31 +108,6 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
-.login{
-    /* padding-inline: 14px;
-    padding-block: 10px; */
-    background-color: #fff;
-}
-.login .btn a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.login .btn {
-    padding:10px 15px;    
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-    background-color: rgb(12, 123, 213);
-    text-transform: capitalize;
-    font-size: 17px;
-    font-weight: 700;
-    cursor: pointer;
-    border: 0;
-}
-
-.login .btn:hover{
-    background-color: rgb(14, 102, 175);
-}
 
 /* Responsive Menu */
 .menu-toggle {
@@ -131,48 +116,46 @@ nav {
     cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
     
-        .list, .login {
+        .list {
             background-color: #fff;
             position: absolute;
             top: 100%;
             left: 0;        
-            width: 100%;
-            /* margin-bottom: 1rem; */
+            width: 100%;         
             display: none;
             flex-direction: column;
             align-items: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            opacity: 0;
+            max-height: 0;
+            transition:all 0.3s ease-in-out ;
+            
         }
-    
-    .list ul, .login {
+        
+        .list ul {
         flex-direction: column;
         width: 100%;
         align-items: start;
         padding-inline: 0.5rem;
+       
     }
     
     .list ul li{
         margin-bottom: 7px; 
     }
-    
-    .login {        
-        margin-top:23px;
-        padding: 5px 15px;
-        top: 12.2rem;
-       
-    }        
+        
     input[type="checkbox"]:checked ~ .list {
         display: flex;
+        max-height: 500px;
+        opacity: 1;
     }
 
-    input[type="checkbox"]:checked ~ .login {
-        display: flex;
-    }
 }
 
 @media (max-width:480px) {

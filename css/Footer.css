@@ -159,10 +159,12 @@ body {
     font-size: 0.9rem;
 }
 
-.footer-nav {
+.footer-nav {    
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    background: transparent;
+    border: 0;
 }
 
 .footer-nav a {
